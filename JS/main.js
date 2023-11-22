@@ -61,7 +61,7 @@ function campoMinato() {
     //il case utilizza operatore di identicita per confrontare i valori, due opzioni:
 
     //1) o tutti input dati dal utente li trasformiamo in numeri
-    let level =Number(document.getElementById('difficolta').value);
+    let level = Number(document.getElementById('difficolta').value);
 
     console.log(level)
 
@@ -88,6 +88,19 @@ function campoMinato() {
 
     contenitoreGrilia.append(fragmentGriglia)
 
+    //generazione bombe
+    let listaBombe = [];
+
+    while (listaBombe.length < 16) {
+        let bombe = Math.floor((Math.random() * cellNumber) + 1);
+        /* console.log({bombe}); */
+
+        if (!listaBombe.includes(bombe)) {
+            listaBombe.push(bombe)
+        }
+    }
+
+    console.log({ listaBombe })
 
 
 
@@ -96,6 +109,23 @@ function campoMinato() {
 
 
 }
+/**** 
+LOGICA GIOCO
+****/
+//il computer deve generare 16 numeri casuali nel rango della difficolta preseclta
+
+
+//1 genera bombe
+//2 genera num random
+//3 controllo numero
+//se clicco su una bomba diventa rosso
+//array numeri casuali lungo 16
+//ciclo che riempie array-while(bomblist<16)
+//randomici(function)
+//che non si ripetano
+
+
+
 
 
 /**** 

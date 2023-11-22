@@ -29,7 +29,7 @@ footer {
 
 .griglia {
     width: 600px;
-    background-color: red;
+    background-color: beige;
     height: 600px;
     display: flex;
     flex-wrap: wrap;
@@ -39,26 +39,11 @@ footer {
 
 .cell {
     border: 2px solid black;
-   
     display: flex;
     align-items: center;
     justify-content: center;
 }
 
-/* .medium {
-    border: 2px solid black;
-    width: calc(100% / 9);
-    height: calc(100% /9);
-    display: flex;
-    align-items: center;
-    justify-content: center;
+.bomba{
+    background-color: red;
 }
-
-.hard {
-    border: 2px solid black;
-    width: calc(100% / 7);
-    height: calc(100% /7);
-    display: flex;
-    align-items: center;
-    justify-content: center;
-} */
