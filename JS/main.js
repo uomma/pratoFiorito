@@ -37,7 +37,15 @@ function creaGriglia(cellNumber) {
 
 
         element.addEventListener('click', function () {
-            console.log('cliccato')
+            console.log('cliccato');
+            const cellNumber = Number(this.innerHTML);
+            function colore(listaBombe) {
+                if (listaBombe.includes(cellNumber)) {
+                    element.classList.add('esplosione');
+                }
+            } return colore(listaBombe)
+
+
         })
         element.innerText = i;
         fragmentGriglia.append(element);
@@ -56,7 +64,7 @@ function campoMinato() {
     //2prendo contenitore griglia
     //devo collegare il menu a tendina con la rispettiva classe di caselle 
 
-    let cellNumber;
+
     //per leggere valore di un campo di input usi VALUE
     //il case utilizza operatore di identicita per confrontare i valori, due opzioni:
 
@@ -89,11 +97,11 @@ function campoMinato() {
     contenitoreGrilia.append(fragmentGriglia)
 
     //generazione bombe
-    let listaBombe = [];
+
 
     while (listaBombe.length < 16) {
         let bombe = Math.floor((Math.random() * cellNumber) + 1);
-        /* console.log({bombe}); */
+
 
         if (!listaBombe.includes(bombe)) {
             listaBombe.push(bombe)
@@ -140,4 +148,6 @@ const startButton = document.getElementById('start');
 startButton.addEventListener('click', campoMinato)
 
 
-
+let cellNumber;
+let listaBombe = [];
+let bombe;
