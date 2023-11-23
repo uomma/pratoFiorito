@@ -118,25 +118,6 @@ function campoMinato() {
 
 }
 /**** 
-LOGICA GIOCO
-****/
-//il computer deve generare 16 numeri casuali nel rango della difficolta preseclta
-
-
-//1 genera bombe
-//2 genera num random
-//3 controllo numero
-//se clicco su una bomba diventa rosso
-//array numeri casuali lungo 16
-//ciclo che riempie array-while(bomblist<16)
-//randomici(function)
-//che non si ripetano
-
-
-
-
-
-/**** 
 MAIN
 ****/
 
